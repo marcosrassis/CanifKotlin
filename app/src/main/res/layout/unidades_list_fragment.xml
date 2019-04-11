@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/list_item_ll_paddingLeft"
+        android:paddingLeft="@dimen/list_item_ll_paddingLeft"
+        android:paddingTop="@dimen/list_item_ll_paddingTop"
+        android:paddingEnd="@dimen/list_item_ll_paddingRight"
+        android:paddingRight="@dimen/list_item_ll_paddingRight"
+        android:paddingBottom="@dimen/list_item_ll_paddingTop">
+
+        <TextView
+            android:id="@+id/tvMontante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="0.5"
+            android:ellipsize="end"
+            android:enabled="false"
+            android:maxLines="1"
+            android:text=""
+            android:textAlignment="textStart"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tvUnidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="0.5"
+            android:ellipsize="end"
+            android:enabled="false"
+            android:maxLines="1"
+            android:text=""
+            android:textAlignment="textEnd"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/horizontal_line1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/colorSecondaryText"
+        android:paddingStart="@dimen/list_item_ll_paddingLeft"
+        android:paddingLeft="@dimen/list_item_ll_paddingLeft"
+        android:paddingTop="@dimen/list_item_ll_paddingTop"
+        android:paddingEnd="@dimen/list_item_ll_paddingRight"
+        android:paddingRight="@dimen/list_item_ll_paddingRight" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/list_item_ll_paddingTop" />
+
+</LinearLayout>
