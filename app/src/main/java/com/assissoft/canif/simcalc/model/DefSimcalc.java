@@ -1,6 +1,6 @@
 package com.assissoft.canif.simcalc.model;
 
-import com.assissoft.canif.simcalc.ui.Antecipacao_1Fragment;
+import com.assissoft.canif.simcalc.ui.Antecipacao1Fragment;
 import com.assissoft.canif.simcalc.ui.Antecipacao_2Fragment;
 import com.assissoft.canif.simcalc.ui.Aplicacao_1Fragment;
 import com.assissoft.canif.simcalc.ui.Aplicacao_2Fragment;
@@ -47,7 +47,7 @@ public class DefSimcalc {
 
     public static final String LISTA = "Simcalc";
 
-    public static final String ANTECIPACAO_1 = Antecipacao_1Fragment.class.getName();
+    public static final String ANTECIPACAO_1 = Antecipacao1Fragment.class.getName();
     public static final String ANTECIPACAO_2 = Antecipacao_2Fragment.class.getName();
     public static final String EMPRESTIMO_1 = Emprestimo_1Fragment.class.getName();
     public static final String EMPRESTIMO_2 = Emprestimo_2Fragment.class.getName();

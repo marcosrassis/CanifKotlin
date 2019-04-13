@@ -6,7 +6,7 @@ import android.support.v4.app.FragmentTransaction;
 
 import com.assissoft.canif.R;
 import com.assissoft.canif.simcalc.model.DefSimcalc;
-import com.assissoft.canif.simcalc.ui.Antecipacao_1Fragment;
+import com.assissoft.canif.simcalc.ui.Antecipacao1Fragment;
 import com.assissoft.canif.simcalc.ui.Antecipacao_2Fragment;
 import com.assissoft.canif.simcalc.ui.Aplicacao_1Fragment;
 import com.assissoft.canif.simcalc.ui.Aplicacao_2Fragment;
@@ -43,8 +43,8 @@ public class OpenFragmentCalculo {
 
     public void openFragment(FragmentManager manager, String TAG) {
 
-        if (Antecipacao_1Fragment.class.getName().equals(TAG))
-            fragment = new Antecipacao_1Fragment();
+        if (Antecipacao1Fragment.class.getName().equals(TAG))
+            fragment = new Antecipacao1Fragment();
 
         if (Antecipacao_2Fragment.class.getName().equals(TAG))
             fragment = new Antecipacao_2Fragment();
