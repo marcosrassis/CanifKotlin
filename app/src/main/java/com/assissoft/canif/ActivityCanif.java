@@ -165,7 +165,7 @@ public class ActivityCanif extends AppCompatActivity implements NavigationView.O
         ft.commit();
 
         //Esconde o botão flutuante
-        fab.setVisibility(View.INVISIBLE);
+        fab.hide();
 
     }
 
@@ -303,7 +303,7 @@ public class ActivityCanif extends AppCompatActivity implements NavigationView.O
                         showButtonHome(getString(R.string.app_name));
 
                         //Desativa o botão flutuante
-                        fab.setVisibility(View.INVISIBLE);
+                        fab.hide();
 
                         //Atualiza o flag do botão flutuante
                         botaoFlutuante = View.INVISIBLE;
@@ -340,7 +340,7 @@ public class ActivityCanif extends AppCompatActivity implements NavigationView.O
                         showButtonHome(getString(R.string.app_name));
 
                         //Desativa o botão flutuante
-                        fab.setVisibility(View.INVISIBLE);
+                        fab.hide();
 
                         if (manager.getBackStackEntryCount() > 0) {
                             //Exibe a tela do conversor
@@ -438,7 +438,7 @@ public class ActivityCanif extends AppCompatActivity implements NavigationView.O
             menu.findItem(R.id.action_convert_all).setVisible(false);
 
             //Desativa o botão flutuante
-            fab.setVisibility(View.INVISIBLE);
+            fab.hide();
 
             //Define a imagem default do botão flutuante
             fab.setImageResource(R.mipmap.ic_rotate_3d);
@@ -774,13 +774,18 @@ public class ActivityCanif extends AppCompatActivity implements NavigationView.O
     @Override
     public void exibeBotaoFlutuante(int visibilidade) {
         botaoFlutuante = visibilidade;
-        fab.setVisibility(visibilidade);
+        if (visibilidade == 1) {
+            fab.show();
+        } else {
+            fab.hide();
+        }
+
     }
 
     @Override
     public void ocultaBotaoFlutuanteSimcalc() {
         botaoFlutuante = View.INVISIBLE;
-        fab.setVisibility(View.INVISIBLE);
+        fab.hide();
     }
 
     @Override
